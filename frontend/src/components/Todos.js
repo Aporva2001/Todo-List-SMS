@@ -69,7 +69,7 @@ navigate(`/edit-todo/${id}`)
     <div>
       <h1 className='font-bold text-center text-blue-700 py-2 text-3xl my-3' >Todos</h1>
       <ul>
-        {(post.length === 0) ? (<h2 className='font-bold text-center text-blue-700 py-2 text-xl my-3'>No Tasks Pending!</h2>): (
+        {(post.length === 0) ? (<h2 className='font-bold text-center text-blue-700 py-2 text-xl my-3'>No Todos Added!</h2>): (
           post.map((todo) => (
           <li key={todo._id}>
             <Todo title={todo.title} status= {todo.status} key={todo._id} todoId= {todo._id} deleteTodo = {deleteTodo} updateTodo ={updateTodo} viewTodo= {viewTodo} isChecked={handleChecked}/>
