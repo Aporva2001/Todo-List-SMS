@@ -63,13 +63,14 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           {/* Email Input */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-600" placeholder="Use <test2@test.com>">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-600">Email</label>
             <input
               type="email"
               id="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
+               placeholder="Use <test2@test.com>"
               className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
@@ -77,13 +78,14 @@ const Login = () => {
 
           {/* Password Input */}
           <div className="mb-6">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-600" placeholder="Use <tester1>">Password</label>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-600" >Password</label>
             <input
               type="password"
               id="password"
               name="password"
               value={formData.password}
               onChange={handleInputChange}
+              placeholder="Use <tester1>"
               className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {errors.password && <p className="text-red-500 text-xs">{errors.password}</p>}
