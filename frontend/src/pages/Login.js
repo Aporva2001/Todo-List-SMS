@@ -63,7 +63,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           {/* Email Input */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-600">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-600" placeholder="Use <test2@test.com>">Email</label>
             <input
               type="email"
               id="email"
@@ -77,7 +77,7 @@ const Login = () => {
 
           {/* Password Input */}
           <div className="mb-6">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-600">Password</label>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-600" placeholder="Use <tester1>">Password</label>
             <input
               type="password"
               id="password"
